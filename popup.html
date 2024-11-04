@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Password Manager</h1>
+
+  <div id="defaultButtons">
+    <button id="addCredential">Add a New Credential</button>
+    <button id="viewCredentials">View Saved Credentials</button>
+  </div>
+
+  <div id="saveCredentialsSection" style="display:none;">
+    <h3>Add a New Credential</h3>
+    <input type="text" id="websiteURL" placeholder="Website URL">
+    <input type="text" id="websiteAlias" placeholder="Save as">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="saveCredentials">Save</button>
+  </div>
+
+  <div id="passwordsList" style="display:none;">
+    <h3>Saved Credentials</h3>
+    <div id="credentialsContainer"></div>
+    <button id="clearAllCredentials" style="display:none;">Clear All Credentials</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
